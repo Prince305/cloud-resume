@@ -9,16 +9,19 @@
     <meta name="author" content="Prince Khumalo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
 
+    <!-- JS & Favicon -->
     <script src="js/modernizr.js"></script>
     <link rel="shortcut icon" href="favicon.png">
 </head>
 
 <body>
+    <!-- ======================== HEADER / HERO ======================== -->
     <header id="home">
         <nav id="nav-wrap">
             <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -27,7 +30,8 @@
                 <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
                 <li><a class="smoothscroll" href="#about">About</a></li>
                 <li><a class="smoothscroll" href="#resume">Resume</a></li>
-                <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+                <!-- Updated to external link for standalone projects page -->
+                <li><a href="Projects.html">Projects</a></li>
                 <li><a class="smoothscroll" href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -39,6 +43,7 @@
                     Specializing in cloud infrastructure and security solutions<br>
                     <a class="smoothscroll" href="#about">Explore my expertise</a></h3>
                 <hr>
+                <!-- Social links -->
                 <ul class="social">
                     <li><a href="https://www.linkedin.com/in/prince-khumalo-6a490460/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                     <li><a href="https://github.com/Prince305" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -51,6 +56,7 @@
         </p>
     </header>
 
+    <!-- ======================== ABOUT SECTION ======================== -->
     <section id="about">
         <div class="row">
             <div class="three columns">
@@ -79,7 +85,9 @@
         </div>
     </section>
 
+    <!-- ======================== RESUME SECTION ======================== -->
     <section id="resume">
+        <!-- Certifications -->
         <div class="row certification">
             <div class="three columns header-col">
                 <h1><span>Credentials</span></h1>
@@ -91,7 +99,7 @@
                         <p class="info">Azure Solutions Architect Expert <span>&bull;</span> <em class="date">2023</em></p>
                         <p class="info">Azure Administrator Associate (AZ-104) <span>&bull;</span> <em class="date">2022</em></p>
                         <p class="info">MCTS: Administering SCCM 2012 <span>&bull;</span> <em class="date">2016</em></p>
-                        
+
                         <h3>Professional Development</h3>
                         <p class="info">ITIL Foundation V3 <span>&bull;</span> <em class="date">2018</em></p>
                         <p class="info">Quality & Operations Management (NQF 5) <span>&bull;</span> <em class="date">2015</em></p>
@@ -100,13 +108,12 @@
             </div>
         </div>
 
+        <!-- Work Experience -->
         <div class="row work">
             <div class="three columns header-col">
                 <h1><span>Experience</span></h1>
             </div>
             <div class="nine columns main-col">
-                <!-- Accenture Experience Removed Here -->
-                
                 <div class="row item">
                     <div class="twelve columns">
                         <h3>SYSPRO (Pty) Ltd</h3>
@@ -118,7 +125,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="row item">
                     <div class="twelve columns">
                         <h3>Webber Wentzel Attorneys</h3>
@@ -134,46 +140,7 @@
         </div>
     </section>
 
-    <section id="portfolio">
-        <div class="row">
-            <div class="twelve columns collapsed">
-                <h1>Technical Projects</h1>
-                <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-                    <div class="columns portfolio-item">
-                        <div class="item-wrap">
-                            <h3>Azure Cloud Resume Challenge</h3>
-                            <div class="project-content">
-                                <h4>Core Components:</h4>
-                                <ul>
-                                    <li>Frontend: HTML5/CSS3/JavaScript</li>
-                                    <li>Hosting: Azure Static Web Apps</li>
-                                    <li>Backend: Azure Functions (Python)</li>
-                                    <li>Database: Cosmos DB</li>
-                                    <li>CI/CD: GitHub Actions</li>
-                                </ul>
-                                
-                                <h4>Implementation Guide:</h4>
-                                <ol>
-                                    <li>Develop responsive frontend with accessibility features</li>
-                                    <li>Configure Azure Storage for static content hosting</li>
-                                    <li>Create Python Function App for visitor counter</li>
-                                    <li>Set up Cosmos DB for data persistence</li>
-                                    <li>Implement CI/CD pipeline with automated testing</li>
-                                    <li>Configure Azure Monitor for performance tracking</li>
-                                </ol>
-                                <a href="https://cloudresumechallenge.dev/docs/the-challenge/azure/" 
-                                   target="_blank" 
-                                   class="button">
-                                   View Challenge Specifications
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- ======================== CONTACT SECTION ======================== -->
     <section id="contact">
         <div class="row section-head">
             <div class="two columns header-col">
@@ -198,6 +165,7 @@
         </div>
     </section>
 
+    <!-- ======================== FOOTER ======================== -->
     <footer>
         <div class="row">
             <ul class="social-links">

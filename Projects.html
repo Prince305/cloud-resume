@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Prince Khumalo – Technical Projects</title>
   <meta name="description" content="Technical Projects by Prince Khumalo, Azure Solutions Architect">
+  <meta name="author" content="Prince Khumalo">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="stylesheet" href="css/default.css">
@@ -15,43 +16,65 @@
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <header>
+  <!-- Header with Nav -->
+  <header id="home">
     <nav id="nav-wrap">
+      <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
       <ul id="nav" class="nav">
-        <li><a href="index.html">← Home</a></li>
+        <li><a class="smoothscroll" href="index.html#home">Home</a></li>
+        <li><a class="smoothscroll" href="index.html#about">About</a></li>
+        <li><a class="smoothscroll" href="index.html#resume">Resume</a></li>
+        <li class="current"><a href="Projects.html">Projects</a></li>
+        <li><a class="smoothscroll" href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="row banner">
+      <div class="banner-text">
+        <h1 class="responsive-headline">My Projects</h1>
+        <h3>Hands-on solutions, cloud-native builds, and technical challenges conquered.<br>
+        <a class="smoothscroll" href="#projects">Scroll down to explore</a></h3>
+        <hr />
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/prince-khumalo-6a490460/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Prince305" target="_blank"><i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="scrolldown">
+      <a class="smoothscroll" href="#projects"><i class="icon-down-circle"></i></a>
+    </p>
   </header>
 
   <!-- Projects Section -->
-  <section id="portfolio">
+  <section id="projects">
     <div class="row">
       <div class="twelve columns collapsed">
         <h1>Technical Projects</h1>
 
         <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-          <!-- Project: Cloud Resume -->
+          <!-- Cloud Resume Project -->
           <div class="columns portfolio-item">
             <div class="item-wrap">
               <h3>Azure Cloud Resume Challenge</h3>
               <div class="project-content">
                 <h4>Core Components:</h4>
                 <ul>
-                  <li>Frontend: HTML5/CSS3/JavaScript</li>
+                  <li>Frontend: HTML5, CSS3, JavaScript</li>
                   <li>Hosting: GitHub Pages</li>
                   <li>Backend: Azure Functions (Python)</li>
                   <li>Database: Cosmos DB</li>
                   <li>CI/CD: GitHub Actions</li>
                 </ul>
-                <h4>Implementation Guide:</h4>
+                <h4>Implementation Highlights:</h4>
                 <ol>
-                  <li>Develop responsive frontend</li>
-                  <li>Deploy site using GitHub Pages</li>
-                  <li>Set up Azure Function App for visitor counter</li>
-                  <li>Store visitor count in Cosmos DB</li>
-                  <li>Wire up CI/CD with GitHub Actions</li>
+                  <li>Responsive UI using HTML/CSS</li>
+                  <li>Static site hosting via GitHub Pages</li>
+                  <li>Azure Function for serverless backend (visitor tracking)</li>
+                  <li>Data storage in Cosmos DB</li>
+                  <li>GitHub Actions for CI/CD pipeline</li>
                 </ol>
                 <a href="https://cloudresumechallenge.dev/docs/the-challenge/azure/" 
                    target="_blank" 
@@ -62,7 +85,7 @@
             </div>
           </div>
 
-          <!-- Future projects go here -->
+          <!-- Future projects will be added below -->
 
         </div>
       </div>
@@ -81,6 +104,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
