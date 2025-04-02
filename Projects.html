@@ -5,8 +5,6 @@
   <title>Prince Khumalo – Technical Projects</title>
   <meta name="description" content="Technical Projects by Prince Khumalo, Azure Solutions Architect">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/media-queries.css">
@@ -16,7 +14,6 @@
 </head>
 
 <body>
-  <!-- Header with Navigation -->
   <header id="home">
     <nav id="nav-wrap">
       <ul id="nav" class="nav">
@@ -31,7 +28,7 @@
     <div class="row banner">
       <div class="banner-text">
         <h1 class="responsive-headline">Technical Projects</h1>
-        <h3>Real-world solutions built with Azure, automation, and modern tooling.</h3>
+        <h3>Real-world solutions built with Azure, automation, and cloud architecture.</h3>
         <hr />
         <ul class="social">
           <li><a href="https://www.linkedin.com/in/prince-khumalo-6a490460/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -41,32 +38,41 @@
     </div>
   </header>
 
-  <!-- Modern Project Card Grid -->
-  <section id="portfolio">
+  <section class="project-section">
     <div class="row">
-      <div class="twelve columns collapsed">
-        <div class="project-grid">
-          <!-- Project Card 1 -->
-          <div class="project-card">
-            <h3>Azure Cloud Resume Challenge</h3>
-            <p>Hosted on GitHub Pages with CI/CD, Azure Function backend, Cosmos DB integration, and JavaScript-powered visitor tracking.</p>
-            <a class="button" href="https://cloudresumechallenge.dev/docs/the-challenge/azure/" target="_blank">View Details</a>
-          </div>
-
-          <!-- Project Card 2 -->
-          <div class="project-card">
-            <h3>Onboarding Automation App</h3>
-            <p>WIP: A full-stack Azure-powered app to automate user onboarding with approval workflows and organizational chart logic.</p>
-            <a class="button" href="#">Coming Soon</a>
-          </div>
-
-          <!-- More project cards can go here -->
+      <div class="twelve columns">
+        <!-- Project 1 -->
+        <div class="project-item">
+          <h3 class="project-title">Azure Cloud Resume Challenge</h3>
+          <p class="project-summary">A full-stack project using Azure Static Web Apps, Functions, Cosmos DB, CI/CD via GitHub Actions, and visitor tracking with JavaScript.</p>
+          <a class="project-button" href="https://cloudresumechallenge.dev/docs/the-challenge/azure/" target="_blank">View Project</a>
         </div>
+
+        <!-- Project 2 -->
+        <div class="project-item">
+          <h3 class="project-title">Onboarding Automation App (WIP)</h3>
+          <p class="project-summary">An Azure-based automation app for onboarding new users with organizational chart logic, approval workflows, and secure provisioning.</p>
+          <a class="project-button" href="#" target="_blank">Coming Soon</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item">
+          <h3 class="project-title">Secure Azure Bastion Deployment</h3>
+          <p class="project-summary">Implements a locked-down Azure Bastion for secure VM access without exposing public IPs, following Microsoft zero-trust guidelines.</p>
+          <a class="project-button" href="https://github.com/madebygps/cloud-engineering-projects/blob/main/az-305/bastion.md" target="_blank">View Project</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-item">
+          <h3 class="project-title">Key Vault + Secrets Rotation</h3>
+          <p class="project-summary">Automated secret rotation using Azure Key Vault, Logic Apps, and App Registrations—fully integrated with Microsoft Graph.</p>
+          <a class="project-button" href="https://github.com/madebygps/cloud-engineering-projects/blob/main/az-305/keyvault-secrets.md" target="_blank">View Project</a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="row">
       <ul class="social-links">
