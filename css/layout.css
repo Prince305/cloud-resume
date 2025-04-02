@@ -1004,3 +1004,47 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+/* ------------------------------------------------------------------ */
+/* Custom Project Card Grid - Matches Ceevee Theme */
+/* ------------------------------------------------------------------ */
+
+.project-grid {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   justify-content: center;
+   margin-top: 2rem;
+ }
+ 
+ .project-card {
+   background: #ffffff0a;
+   border: 1px solid #444;
+   padding: 1.5rem;
+   border-radius: 12px;
+   width: 300px;
+   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+   transition: transform 0.2s ease-in-out;
+ }
+ 
+ .project-card h3 {
+   color: #fff;
+   font-size: 1.4rem;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .project-card p {
+   font-size: 0.95rem;
+   color: #ccc;
+   margin-bottom: 1rem;
+ }
+ 
+ .project-card .button {
+   font-size: 0.9rem;
+   padding: 0.5rem 1rem;
+ }
+ 
+ .project-card:hover {
+   transform: translateY(-6px);
+   border-color: #00bcd4;
+ }
+ 
