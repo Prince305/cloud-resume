@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/media-queries.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/projects.css"> <!-- new projects.css -->
   <link rel="shortcut icon" href="favicon.png">
   <script src="js/modernizr.js"></script>
 </head>
 
 <body>
-  <header id="home">
+  <header id="home" class="projects-header">
     <nav id="nav-wrap">
       <ul id="nav" class="nav">
         <li><a href="index.html#home">Home</a></li>
@@ -25,7 +26,7 @@
       </ul>
     </nav>
 
-    <div class="row banner">
+    <div class="banner">
       <div class="banner-text">
         <h1 class="responsive-headline">Technical Projects</h1>
         <h3>Real-world solutions built with Azure, automation, and cloud architecture.</h3>
@@ -35,43 +36,38 @@
           <li><a href="https://github.com/Prince305" target="_blank"><i class="fa fa-github"></i></a></li>
         </ul>
       </div>
-    </div>
-  </header>
 
-  <section class="project-section">
-    <div class="row">
-      <div class="twelve columns">
+      <div class="projects-grid">
         <!-- Project 1 -->
-        <div class="project-item">
-          <h3 class="project-title">Azure Cloud Resume Challenge</h3>
-          <p class="project-summary">A full-stack project using Azure Static Web Apps, Functions, Cosmos DB, CI/CD via GitHub Actions, and visitor tracking with JavaScript.</p>
+        <div class="project-card">
+          <h3>Azure Cloud Resume Challenge</h3>
+          <p>A full-stack project using Azure Static Web Apps, Functions, Cosmos DB, CI/CD via GitHub Actions, and visitor tracking with JavaScript.</p>
           <a class="project-button" href="https://cloudresumechallenge.dev/docs/the-challenge/azure/" target="_blank">View Project</a>
         </div>
 
         <!-- Project 2 -->
-        <div class="project-item">
-          <h3 class="project-title">Onboarding Automation App (WIP)</h3>
-          <p class="project-summary">An Azure-based automation app for onboarding new users with organizational chart logic, approval workflows, and secure provisioning.</p>
+        <div class="project-card">
+          <h3>Onboarding Automation App (WIP)</h3>
+          <p>An Azure-based automation app for onboarding new users with organizational chart logic, approval workflows, and secure provisioning.</p>
           <a class="project-button" href="#" target="_blank">Coming Soon</a>
         </div>
 
         <!-- Project 3 -->
-        <div class="project-item">
-          <h3 class="project-title">Secure Azure Bastion Deployment</h3>
-          <p class="project-summary">Implements a locked-down Azure Bastion for secure VM access without exposing public IPs, following Microsoft zero-trust guidelines.</p>
+        <div class="project-card">
+          <h3>Secure Azure Bastion Deployment</h3>
+          <p>Implements a locked-down Azure Bastion for secure VM access without exposing public IPs, following Microsoft zero-trust guidelines.</p>
           <a class="project-button" href="https://github.com/madebygps/cloud-engineering-projects/blob/main/az-305/bastion.md" target="_blank">View Project</a>
         </div>
 
         <!-- Project 4 -->
-        <div class="project-item">
-          <h3 class="project-title">Key Vault + Secrets Rotation</h3>
-          <p class="project-summary">Automated secret rotation using Azure Key Vault, Logic Apps, and App Registrations—fully integrated with Microsoft Graph.</p>
+        <div class="project-card">
+          <h3>Key Vault + Secrets Rotation</h3>
+          <p>Automated secret rotation using Azure Key Vault, Logic Apps, and App Registrations—fully integrated with Microsoft Graph.</p>
           <a class="project-button" href="https://github.com/madebygps/cloud-engineering-projects/blob/main/az-305/keyvault-secrets.md" target="_blank">View Project</a>
         </div>
-
       </div>
     </div>
-  </section>
+  </header>
 
   <footer>
     <div class="row">
@@ -84,5 +80,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>
