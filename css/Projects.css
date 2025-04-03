@@ -1,19 +1,37 @@
+/* Projects Header */
 .projects-header {
   background: url('../images/header-background.jpg') no-repeat center center;
   background-size: cover !important;
-  padding: 160px 30px 100px;
+  padding: 100px 30px 80px;
   text-align: center;
 }
 
+/* Section for the Grid */
+.projects-section {
+  background: #0f0f0f;
+  padding: 60px 30px;
+}
+
+.projects-section::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #444;
+  margin: 0 auto 40px auto;
+}
+
+/* Grid Container */
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   max-width: 1200px;
-  margin: 20px auto 40px auto;
+  margin: 0 auto;
 }
 
+/* Each Project Card */
 .project-card {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
