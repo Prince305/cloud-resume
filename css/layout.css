@@ -6,7 +6,7 @@
 
    TOC:
    a. General Styles
-   b. Header Styles (with Project Cards Integration)
+   b. Header Styles (Flexbox Layout)
    c. About Section
    d. Resume Section
    e. Portfolio Section
@@ -14,7 +14,7 @@
    g. Testimonials Section
    h. Contact Section
    i. Footer
-   j. Project Cards Styles
+   j. Project Cards Styles (CSS Grid)
 
 ===================================================================== */
 
@@ -24,12 +24,13 @@
 body {
    background: #0f0f0f;
    color: #fff;
-   -webkit-font-smoothing: antialiased;
    font-family: 'Open Sans', sans-serif;
+   line-height: 1.6;
+   -webkit-font-smoothing: antialiased;
  }
  
  /* ------------------------------------------------------------------ */
- /* b. Header Styles with Integrated Project Cards
+ /* b. Header Styles
  /* ------------------------------------------------------------------ */
  header {
    position: relative;
@@ -45,22 +46,22 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: flex-start;
    min-height: 80vh;
-   padding: 120px 0;
+   padding: 120px 2rem 0 2rem;
  }
  
  header .banner-text h1 {
-   font: 4.5rem/1.1 'opensans-bold', sans-serif;
-   letter-spacing: -2px;
+   font-size: 4rem;
+   font-weight: 700;
    margin-bottom: 1.5rem;
-   transition: all 0.3s ease-in-out;
+   letter-spacing: -1px;
  }
  
  header .banner-text h3 {
-   font: 1.25rem/1.6 'librebaskerville-regular', serif;
+   font-size: 1.25rem;
    max-width: 680px;
-   margin: 0 auto;
-   transition: all 0.3s ease-in-out;
+   margin: 0;
  }
  
  header::after {
@@ -75,17 +76,17 @@ body {
  }
  
  /* ------------------------------------------------------------------ */
- /* j. Project Cards Grid Integration
+ /* j. Project Cards Styles
  /* ------------------------------------------------------------------ */
  .project-grid {
-   position: relative;
-   z-index: 10;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    gap: 2rem;
    max-width: 1200px;
    margin: -100px auto 0;
-   padding: 0 2rem;
+   padding: 2rem;
+   position: relative;
+   z-index: 10;
  }
  
  .project-card {
@@ -94,7 +95,7 @@ body {
    border: 1px solid rgba(255, 255, 255, 0.15);
    padding: 2rem;
    border-radius: 16px;
-   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+   transition: all 0.4s ease;
    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
  }
  
@@ -118,15 +119,18 @@ body {
  }
  
  .project-card .button {
-   background: rgba(0, 188, 212, 0.9);
+   background: #00bcd4;
    color: #fff;
    padding: 0.8rem 1.8rem;
    border-radius: 8px;
-   transition: all 0.3s ease;
+   display: inline-block;
+   transition: background-color 0.3s ease;
+   text-decoration: none;
+   text-align: center;
  }
  
  .project-card .button:hover {
-   background: #00bcd4;
+   background-color: #0097a7;
    transform: translateY(-2px);
  }
  
@@ -167,17 +171,14 @@ body {
    }
    .project-card .button {
      width: 100%;
-     text-align: center;
    }
  }
  
  /* ------------------------------------------------------------------ */
- /* e. Portfolio Section Fix (No margin push needed)
+ /* Portfolio Spacing Reset
  /* ------------------------------------------------------------------ */
  #portfolio {
    margin-top: 0 !important;
    padding-top: 120px;
  }
- 
- /* Additional original layout sections would follow */
  
