@@ -1050,4 +1050,14 @@ footer .social-links li:first-child { margin-left: 0; }
    transform: translateY(-6px);
    border-color: #00bcd4;
  }
- 
+ /* ------------------------------------------------------------------ */
+/* j. Project Section Offset Fix
+/* ------------------------------------------------------------------ */
+/*
+   This custom style slightly moves the Projects section up the page
+   to better align with the header background. You can tweak this
+   value based on screen size if needed.
+*/
+#portfolio {
+   margin-top: -8vh;
+}
