@@ -1061,3 +1061,16 @@ footer .social-links li:first-child { margin-left: 0; }
 #portfolio {
    margin-top: -8vh;
 }
+
+
+/* ------------------------------------------------------------------ */
+/* j. Project Section Offset Fix
+/* ------------------------------------------------------------------ */
+/*
+   This rule lifts the entire Projects section closer to the banner.
+   It fixes visual spacing to avoid a large gap on the Projects.html page.
+   You can adjust the value based on personal preference.
+*/
+#portfolio {
+   margin-top: -8vh; /* Move section up by 8% of viewport height */
+}
